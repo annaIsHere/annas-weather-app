@@ -4,15 +4,105 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>experiment</title>
-    <style>
-      h1 {
-        text-align: center;
-        color: aqua;
-      }
-    </style>
+    <title>Anna's Weather Application</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <script
+      src="https://kit.fontawesome.com/e6f56cc878.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <h1>Hi</h1>
+    <div class="container">
+      <div class="encompass">
+        <h1>City</h1>
+        <div class="row">
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+                <div class="current-time-date-temp">
+                  <h3 class="card-title" id="today">Tuesday 2300</h3>
+                  <h4 id="weather-description">Mostly Cloudy</h4>
+                  <p class="card-text dailyemoji">
+                    <a href="#" id="celcius"></a>
+                    <a href="#" id="farenheight">¯\_(ツ)_/¯</a>Fº
+                  </p>
+                </div>
+                <ul class="seven-day-forcast">
+                  <li class="forcast">Wed 🌧 24ºC/13ºC</li>
+                  <li class="forcast">Thu 🌧 24ºC/13ºC</li>
+                  <li class="forcast">Fri 🌧 24ºC/13ºC</li>
+                  <li class="forcast">Sat 🌧 24ºC/13ºC</li>
+                  <li class="forcast">Sun 🌧 24ºC/13ºC</li>
+                  <li class="forcast">Mon 🌧 24ºC/13ºC</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body searchable">
+                <form id="search-form">
+                  <input
+                    type="text"
+                    placeholder="Enter a City"
+                    autofocus="on"
+                    id="city-search"
+                  />
+                  <input type="submit" class="btn btn-primary" value="search" />
+                  <button
+                    type="button"
+                    class="btn btn-info"
+                    id="current-location"
+                  >
+                    Current Location
+                  </button>
+                </form>
+
+                <br />
+
+                <h5>
+                  <ul>
+                    <li id="dayTemp" class="temp-precipitation-speed">
+                      Day Temp <strong> 22ºC</strong>
+                    </li>
+                    <li id="nightTemp" class="temp-precipitation-speed">
+                      Night Temp<strong> 12ºC</strong>
+                    </li>
+                    <li id="humidity" class="temp-precipitation-speed">
+                      Humidity<strong>%</strong>
+                    </li>
+                    <li id="windSpeed" class="temp-precipitation-speed">
+                      Wind Speed<strong> 20 mph</strong>
+                    </li>
+                  </ul>
+                </h5>
+                <img src="img/raincloud.jpg" alt="cloud" />
+                <div class="moonphase">
+                  Tonight's Moon <br />🌖<br />Waning Gibbous
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

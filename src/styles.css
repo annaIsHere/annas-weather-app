@@ -1,0 +1,100 @@
+.encompass {
+  max-width: 80%;
+  margin: 10px auto;
+  padding: 60px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  background-color: #00bcd4;
+}
+h1 {
+  margin: 15px;
+  font-family: "Otomanopee One", sans-serif;
+  color: #fff;
+}
+h3,
+h4 {
+  color: #212121;
+}
+a {
+  text-decoration: none;
+}
+
+.current-time-date-temp {
+  border: 2px solid blue;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 10px;
+}
+.seven-day-forcast {
+  border: 2px solid blue;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 10px;
+  list-style-type: none;
+}
+.forcast {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #009787;
+  transition: 150ms all ease-in-out;
+}
+.forcast:hover {
+  background-color: #cddc39;
+  color: #212121;
+  cursor: crosshair;
+}
+.container {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.dailyemoji {
+  font-size: 20px;
+  text-align: center;
+  border: 2px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  color: #757575;
+  background-color: #b2ebf2;
+}
+.btn-primary {
+  margin: 10px;
+}
+.btn-info {
+  margin: 5px;
+}
+.searchable {
+  border: 2px solid blue;
+  border-radius: 0.25rem;
+}
+.temp-precipitation-speed {
+  color: #00bcd4;
+}
+.moonphase {
+  font-size: 20px;
+  font-family: "Otomanopee One", sans-serif;
+
+  margin: 10px;
+  text-align: center;
+  border: solid blue;
+  border-radius: 10px;
+  background-color: #b2ebf2;
+  color: #757575;
+  transition: 500ms all ease-in-out;
+}
+.moonphase:hover {
+  cursor: crosshair;
+  background-color: #212121;
+  color: #fff;
+}
+img {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
